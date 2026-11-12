@@ -1,6 +1,6 @@
 # AGENTS.md
 
-Guidance for coding agents working in this repo. See README.md for what the project does and how to use it.
+Guidance for coding agents working in this repo. See README.md for what the project does and how to use it, and `docs/production-plan.md` for the production roadmap. When you complete a task from that plan, tick its checkbox.
 
 ## Layout
 

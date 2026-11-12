@@ -123,6 +123,8 @@ After changing the MCP server, run `make mcp`. New sessions use the new binary.
 
 ## Limitations
 
+This is a POC. See [docs/production-plan.md](docs/production-plan.md) for the path to production.
+
 - **About 6 MB per request and response:** Lambda's limit on request and response size. Larger payloads would need presigned S3 uploads.
 - **Copies can be incomplete:** the model writes the conversation out, so very long chats may be shortened.
 - **Large pastes fill context:** pasted text is added to the chat in full and takes up the new session's context window.
