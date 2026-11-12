@@ -72,4 +72,4 @@ These change shared or persistent state:
 - **New dependencies:** run `go mod tidy` after adding imports.
 - **Paths from `api_url`:** the Terraform output ends with `/`. Build URLs as `${API_URL}files`, not `${API_URL}/files`. `Client` strips the trailing slash itself.
 - **Header names:** HTTP API events deliver header names in lowercase. Read `req.Headers["x-api-key"]`.
-- **Not a git repo:** the project isn't under version control yet, so there's no history to recover from. Read files before overwriting them.
+- **Git:** commit only when the user asks, and never commit `terraform.tfstate`, `build/` or anything containing the API key (`.gitignore` covers the usual paths).
